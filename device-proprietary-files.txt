@@ -10,7 +10,9 @@ etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml
 
 # Hotword Enrollment
--priv-app/HotwordEnrollmentWCD9335/HotwordEnrollmentWCD9335.apk:priv-app/HotwordEnrollmentWCD9335/HotwordEnrollmentWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:PRESIGNED
 
 # IMS/HD Voice
 -priv-app/CNEService/CNEService.apk
@@ -21,10 +23,9 @@ etc/permissions/privapp-permissions-marlin.xml
 
 # RIL
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-lib64/vendor.qti.atcmdfwd@1.0.so
-lib64/vendor.qti.qcril.am@1.0.so
 
 # Sprint
+etc/permissions/com.android.sdm.plugins.sprintdm.xml
 -priv-app/SprintDM/SprintDM.apk
 -priv-app/SprintHM/SprintHM.apk
 
@@ -33,9 +34,13 @@ lib64/vendor.qti.qcril.am@1.0.so
 -priv-app/colorservice/colorservice.apk
 -priv-app/datastatusnotification/datastatusnotification.apk
 -priv-app/embms/embms.apk
+priv-app/embms/oem/config_params.xml
+priv-app/embms/oem/provisioning_params.xml
+priv-app/embms/oem/verizon_config_params.txt
 -priv-app/fastdormancy/fastdormancy.apk
 -priv-app/ims/ims.apk
 -priv-app/imssettings/imssettings.apk
+-priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
 -priv-app/QtiTelephonyService/QtiTelephonyService.apk
 -priv-app/radioconfig/radioconfig.apk
 -priv-app/RCSBootstraputil/RCSBootstraputil.apk
@@ -43,6 +48,7 @@ lib64/vendor.qti.qcril.am@1.0.so
 -priv-app/shutdownlistener/shutdownlistener.apk
 -priv-app/SSRestartDetector/SSRestartDetector.apk
 -priv-app/TimeService/TimeService.apk
+-priv-app/vzw_msdc_api/vzw_msdc_api.apk
 
 # VZW
 -app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
@@ -52,9 +58,5 @@ etc/permissions/com.verizon.embms.xml
 etc/permissions/com.verizon.llkagent.xml
 etc/permissions/com.verizon.provider.xml
 etc/permissions/com.verizon.services.xml
-etc/permissions/vzw_sso_permissions.xml
 -framework/VerizonUnifiedSettings.jar:PRESIGNED
--priv-app/VZWAPNService/VZWAPNService.apk:priv-app/VZWAPNService/VZWAPNService.apk:PRESIGNED
--priv-app/VZWAVS/VZWAVS.apk:priv-app/VZWAVS/VZWAVS.apk:PRESIGNED
--priv-app/VzwLcSilent/VzwLcSilent.apk:priv-app/VzwLcSilent/VzwLcSilent.apk:PRESIGNED
 -priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
