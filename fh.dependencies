@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "LineageOS/android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch" :  "staging/lineage-15.1"
+  },
+  {
+    "repository": "neporood/android_kernel_google_marlin",
+    "target_path": "kernel/google/marlin",
+    "branch" :  "oreo-mr1"
+  }
+]
