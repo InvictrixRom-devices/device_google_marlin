@@ -12,4 +12,7 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/google/marlin/sepolicy-lineage/private
 
+# Remove CNM Camera
+DISABLE_CNM := true
+
 -include vendor/google/marlin/BoardConfigVendor.mk

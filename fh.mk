@@ -7,6 +7,7 @@ $(call inherit-product, vendor/fh/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
+$(call inherit-product, vendor/nepo/my-apps.mk)
 
 -include device/google/marlin/marlin/device-lineage.mk
 
