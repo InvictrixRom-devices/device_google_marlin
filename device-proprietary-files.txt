@@ -10,9 +10,9 @@ etc/cne/Nexus/ROW/ROW_profiles.xml
 etc/cne/Nexus/VZW/VZW_profiles.xml
 
 # Hotword Enrollment
--priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk:PRESIGNED
--priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk:PRESIGNED
--priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk:PRESIGNED
+-priv-app/HotwordEnrollmentOKGoogleWCD9335/HotwordEnrollmentOKGoogleWCD9335.apk;PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9335/HotwordEnrollmentTGoogleWCD9335.apk;PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9335/HotwordEnrollmentXGoogleWCD9335.apk;PRESIGNED
 
 # IMS/HD Voice
 lib/lib-imsvideocodec.so
@@ -42,16 +42,16 @@ etc/permissions/obdm_permissions.xml
 etc/sysconfig/whitelist_com.android.omadm.service.xml
 lib/libdmengine.so
 lib/libdmjavaplugin.so
--app/Tycho/Tycho.apk:app/Tycho/Tycho.apk:PRESIGNED
--priv-app/CarrierServices/CarrierServices.apk:priv-app/CarrierServices/CarrierServices.apk:PRESIGNED
--priv-app/CarrierSetup/CarrierSetup.apk:priv-app/CarrierSetup/CarrierSetup.apk:PRESIGNED
+-app/Tycho/Tycho.apk;PRESIGNED
+-priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
+-priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
 -priv-app/ConnMO/ConnMO.apk
 -priv-app/DCMO/DCMO.apk
 -priv-app/DiagMon/DiagMon.apk
 -priv-app/DMService/DMService.apk
--priv-app/GCS/GCS.apk:priv-app/GCS/GCS.apk:PRESIGNED
--priv-app/obdm_stub/obdm_stub.apk:priv-app/obdm_stub/obdm_stub.apk:PRESIGNED
--priv-app/OBDM_Permissions/OBDM_Permissions.apk:priv-app/OBDM_Permissions/OBDM_Permissions.apk:PRESIGNED
+-priv-app/GCS/GCS.apk;PRESIGNED
+-priv-app/obdm_stub/obdm_stub.apk;PRESIGNED
+-priv-app/OBDM_Permissions/OBDM_Permissions.apk;PRESIGNED
 -priv-app/OemDmTrigger/OemDmTrigger.apk
 -priv-app/SprintDM/SprintDM.apk
 -priv-app/SprintHM/SprintHM.apk
@@ -78,7 +78,7 @@ priv-app/embms/oem/verizon_config_params.txt
 -priv-app/vzw_msdc_api/vzw_msdc_api.apk
 
 # VZW
--app/VZWAPNLib/VZWAPNLib.apk:app/VZWAPNLib/VZWAPNLib.apk:PRESIGNED
+-app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 etc/permissions/com.android.vzwomatrigger.xml
 etc/permissions/com.verizon.apn.xml
 etc/permissions/com.verizon.embms.xml
@@ -87,6 +87,8 @@ etc/permissions/com.verizon.provider.xml
 etc/permissions/com.verizon.services.xml
 etc/permissions/features-verizon.xml
 etc/permissions/vzw_mvs_permissions.xml
--framework/VerizonUnifiedSettings.jar:PRESIGNED
--priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:priv-app/VzwOmaTrigger/VzwOmaTrigger.apk:PRESIGNED
--priv-app/WfcActivation/WfcActivation.apk:priv-app/WfcActivation/WfcActivation.apk:PRESIGNED
+framework/VerizonUnifiedSettings.jar;PRESIGNED
+priv-app/MyVerizonServices/lib/arm64/libmotricity.so
+priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
+priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
+priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
