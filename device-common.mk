@@ -635,3 +635,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service.marlin
+
+# Telephony
+TARGET_PROVIDES_TELEPHONY_EXT := true
