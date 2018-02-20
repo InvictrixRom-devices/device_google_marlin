@@ -56,27 +56,6 @@ lib/libdmjavaplugin.so
 -priv-app/SprintDM/SprintDM.apk
 -priv-app/SprintHM/SprintHM.apk
 
-# Vendor APKs
--priv-app/atfwd/atfwd.apk
--priv-app/colorservice/colorservice.apk
--priv-app/datastatusnotification/datastatusnotification.apk
--priv-app/embms/embms.apk
-priv-app/embms/oem/config_params.xml
-priv-app/embms/oem/provisioning_params.xml
-priv-app/embms/oem/verizon_config_params.txt
--priv-app/fastdormancy/fastdormancy.apk
--priv-app/ims/ims.apk
--priv-app/imssettings/imssettings.apk
--priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
--priv-app/QtiTelephonyService/QtiTelephonyService.apk
--priv-app/radioconfig/radioconfig.apk
--priv-app/RCSBootstraputil/RCSBootstraputil.apk
--priv-app/SecureExtAuthService/SecureExtAuthService.apk
--priv-app/shutdownlistener/shutdownlistener.apk
--priv-app/SSRestartDetector/SSRestartDetector.apk
--priv-app/TimeService/TimeService.apk
--priv-app/vzw_msdc_api/vzw_msdc_api.apk
-
 # VZW
 -app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 etc/permissions/com.android.vzwomatrigger.xml
