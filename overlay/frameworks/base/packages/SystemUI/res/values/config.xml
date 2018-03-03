@@ -41,4 +41,8 @@
     <string name="quick_settings_tiles_default" translatable="false">
         wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night
     </string>
+
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,nfc,hotspot,inversion,saver,work,cast,night,lte,caffeine,pip,screenshot,adb_network,sound,heads_up,screenrecord,volume,compass,usb_tether,music,expanded_desktop,greenify,weather,sync
+    </string>
 </resources>
