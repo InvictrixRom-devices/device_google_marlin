@@ -5,7 +5,7 @@
     "branch" :  "lineage-15.1"
   },
   {
-    "repository": "nathanchance/kernel_google_marlin",
+    "repository": "neporood/kernel_google_marlin",
     "target_path": "kernel/google/marlin",
     "branch" :  "oreo-mr1"
   },
