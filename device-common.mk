@@ -308,7 +308,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Write Manufacturer & Model information in created media files.
 # IMPORTANT: ONLY SET THIS PROPERTY TO TRUE FOR PUBLIC DEVICES
-ifneq ($(filter fh_sailfish% aosp_sailfish% sailfish% fh_marlin% aosp_marlin% marlin%, $(TARGET_PRODUCT)),)
+ifneq ($(filter invictrix_sailfish% aosp_sailfish% sailfish% invictrix_marlin% aosp_marlin% marlin%, $(TARGET_PRODUCT)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     media.recorder.show_manufacturer_and_model=true
 else

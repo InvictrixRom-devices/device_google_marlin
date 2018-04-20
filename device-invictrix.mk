@@ -1,7 +1,6 @@
 # Camera
 PRODUCT_PACKAGES += \
-    libion \
-    Snap
+    libion
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -10,7 +9,7 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay-invictrix
 
 # Pixel Experience
 PRODUCT_COPY_FILES += \

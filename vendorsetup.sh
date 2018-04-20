@@ -27,5 +27,5 @@
 #  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-add_lunch_combo fh_marlin-userdebug
-add_lunch_combo fh_sailfish-userdebug
+add_lunch_combo invictrix_marlin-userdebug
+add_lunch_combo invictrix_sailfish-userdebug

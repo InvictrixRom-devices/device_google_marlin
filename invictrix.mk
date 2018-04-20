@@ -2,21 +2,17 @@
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common FireHound stuff.
-$(call inherit-product, vendor/fh/config/common_full_phone.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/invictrix/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 $(call inherit-product, vendor/nepo/my-apps.mk)
 
-# Disable FH Prebuilts
-DISABLE_CNM := true
-DISABLE_CWB := true
-
--include device/google/marlin/marlin/device-lineage.mk
+-include device/google/marlin/marlin/device-invictrix.mk
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := fh_marlin
+PRODUCT_NAME := invictrix_marlin
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC

@@ -3,8 +3,8 @@
 # Product-specific compile-time definitions
 #
 
-# Allow Lineage config to override others
--include device/google/marlin/marlin/BoardConfigLineage.mk
+# Allow Invictrix config to override others
+-include device/google/marlin/marlin/BoardConfigInvictrix.mk
 
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOOTLOADER_BOARD_NAME := marlin
