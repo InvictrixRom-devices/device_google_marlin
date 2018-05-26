@@ -1,8 +1,8 @@
 [
   {
-    "repository": "neporood/kernel_google_marlin",
+    "repository": "InvictrixROM-Devices/kernel_google_marlin",
     "target_path": "kernel/google/marlin",
-    "branch" :  "oreo-mr1"
+    "branch" :  "inv-8.1"
   },
   {
     "repository": "razorloves/proprietary_vendor_google",
