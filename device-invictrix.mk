@@ -9,7 +9,7 @@ PRODUCT_PACKAGES += \
     RcsService
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/marlin/overlay-invictrix
+DEVICE_PACKAGE_OVERLAYS += device/google/marlin/marlin/overlay
 
 # Pixel Experience
 PRODUCT_COPY_FILES += \
