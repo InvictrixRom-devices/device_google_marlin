@@ -25,12 +25,11 @@
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
 # Inherit DU product configuration
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/invictrix/config/common_full_phone.mk)
 
 # Custom device configuration
 
 $(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk) #TODO: To be removed
 
 ## Camera
 PRODUCT_PACKAGES += \
@@ -47,7 +46,7 @@ PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := du_marlin
+PRODUCT_NAME := invictrix_marlin
 PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
