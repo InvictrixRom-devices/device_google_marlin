@@ -24,12 +24,16 @@
 # Inherit from AOSP products. Most specific first.
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
-# Inherit DU product configuration
+# Inherit product configuration
 $(call inherit-product, vendor/invictrix/config/common_full_phone.mk)
 
 # Custom device configuration
 
 $(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
 
 ## Camera
 PRODUCT_PACKAGES += \
