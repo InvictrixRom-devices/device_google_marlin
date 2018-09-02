@@ -1,12 +1,12 @@
 [
  {
-   "repository":  "DirtyUnicorns/android_kernel_google_marlin",
+   "repository":  "InvictrixRom-Devices/kernel_google_marlin",
    "target_path": "kernel/google/marlin",
-   "branch":      "p9x"
+   "branch":      "inv-9.0"
  },
  {
-   "repository":  "DirtyUnicorns/android_vendor_google",
+   "repository":  "InvictrixRom-Devices/vendor_google",
    "target_path": "vendor/google",
-   "branch":      "p9x"
+   "branch":      "inv-9.0"
  }
 ]
