@@ -21,17 +21,15 @@
 # lines, aosp and du, hence its name.
 #
 
+# Include DU common configuration
+include vendor/du/config/common_full_phone.mk
+
 # Inherit from AOSP products. Most specific first.
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
 
-# Inherit DU product configuration
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-
-# Custom device configuration
-
-$(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
-# Wait for GApps
-# $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk) 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 ## Camera
 PRODUCT_PACKAGES += \
@@ -53,11 +51,16 @@ PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC
-PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=marlin \
+    PRODUCT_NAME="marlin" \
+    TARGET_DEVICE="marlin" \
     PRIVATE_BUILD_DESC="marlin-user 10 QP1A.190711.020 5800535 release-keys"
 
-BUILD_FINGERPRINT="google/marlin/marlin:10/QP1A.190711.020/5800535:user/release-keys"
-BUILD_THUMBPRINT="10/QP1A.190711.020/5800535:user/release-keys"
+BUILD_FINGERPRINT := "google/marlin/marlin:10/QP1A.190711.020/5800535:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=google/marlin/marlin:10/QP1A.190711.020/5800535:user/release-keys
+
+$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)

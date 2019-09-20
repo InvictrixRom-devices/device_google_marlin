@@ -122,14 +122,13 @@ BOARD_RAMDISK_OFFSET     := 0x02200000
 endif
 
 # Kernel
-TARGET_KERNEL_CLANG_COMPILE := true
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-#TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_CONFIG := du_marlin_defconfig
-TARGET_KERNEL_SOURCE := kernel/google/marlin
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_CLANG_COMPILE := true
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_KERNEL_CONFIG := marlin_defconfig
+TARGET_KERNEL_SOURCE := kernel/google/marlin
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
@@ -185,6 +184,9 @@ BOARD_USES_SYSTEM_OTHER_ODEX := true
 
 # Build a separate vendor.img
 TARGET_COPY_OUT_VENDOR := vendor
+
+# Build a separate product.img
+TARGET_COPY_OUT_PRODUCT := system/product
 
 #NFC
 NXP_CHIP_TYPE := 3

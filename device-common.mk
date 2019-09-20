@@ -651,3 +651,7 @@ PRODUCT_PACKAGES_DEBUG += a_sns_test
 # Write flags to the vendor space in /misc partition.
 PRODUCT_PACKAGES += \
     misc_writer
+
+# Google Assistant
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true \
