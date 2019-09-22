@@ -21,8 +21,9 @@
 # lines, aosp and du, hence its name.
 #
 
-# Include DU common configuration
-include vendor/du/config/common_full_phone.mk
+# Include vendor common configuration
+include vendor/invictrix/config/common.mk
+include vendor/invictrix/config/gsm.mk
 
 # Inherit from AOSP products. Most specific first.
 $(call inherit-product, device/google/marlin/aosp_marlin.mk)
@@ -46,7 +47,7 @@ PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := du_marlin
+PRODUCT_NAME := invictrix_marlin
 PRODUCT_DEVICE := marlin
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel XL
